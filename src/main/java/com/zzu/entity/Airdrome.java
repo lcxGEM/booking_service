@@ -1,15 +1,9 @@
 package com.zzu.entity;
 
-import org.springframework.data.annotation.Transient;
-
 public class Airdrome {
     private int airId;
     private String name;
     private String location;
-    private String tel;
-    private int status;
-    @Transient
-    private String LocationName;
 
     public int getAirId() {
         return airId;
@@ -35,39 +29,12 @@ public class Airdrome {
         this.location = location;
     }
 
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public String getLocationName() {
-        return LocationName;
-    }
-
-    public void setLocationName(String locationName) {
-        LocationName = locationName;
-    }
-
     @Override
     public String toString() {
         return "Airdrome{" +
                 "airId=" + airId +
                 ", name='" + name + '\'' +
                 ", location='" + location + '\'' +
-                ", tel='" + tel + '\'' +
-                ", status=" + status +
-                ", LocationName='" + LocationName + '\'' +
                 '}';
     }
 }

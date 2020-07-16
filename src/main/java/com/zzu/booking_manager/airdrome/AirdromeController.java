@@ -46,8 +46,15 @@ public class AirdromeController {
 
     @GetMapping("deleteAirById")
     @ResponseBody
+<<<<<<< HEAD
         public String deleteAirById(int id){
             System.out.println("---deleteAirById----param----->"+id);
             return null;
         }
+=======
+    public String deleteAirById(int id){
+        System.out.println("---deleteAirById----param----->"+id);
+        return null;
+    }
+>>>>>>> github/master
 }
